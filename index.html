@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body>
+<div class="container">
+        <h1 class="display-4">SMART SHOPPING LIST</h1>
+        <p>Making The Shopping Beautiful!!!  Always Your Best Choice!!</p>
+        <div class="text-center">
+        <button id="view" onclick="list()">View</button>
+        </div>
+        <marquee direction="left">Good quality & up all to get with best price and healthy products...Gives you best offers and gifts..</marquee>  
+       <table class="mx-auto table table-borderless table-responsive-lg">
+          <thead>
+             <tr>
+                <th>Serial No</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Unit</th>
+                
+                <th class="dropdown">
+                  <a class="dropdown-toggle filter-table" data-toggle="dropdown" >Department<span class="caret"></span></a>
+        
+                    <ul class="dropdown-menu">
+                      <li><a href="#" id="all" onclick="list()">all</a></li>
+                      <li><a href="#" id="grocery" onclick="grocery()">grocery</a></li>
+                      <li><a href="#" id="veg" onclick="veg()">veg</a></li>
+                      <li><a href="#" id="fruits" onclick="fruits()">fruits</a></li>
+               
+              
+                    </ul> 
+            
+                </th>
+                <th>Notes</th>
+             </tr>
+          </thead>
+         <tbody id="list-table">
+
+         </tbody>
+   
+       </table>
+  </div>
+
+
+    
+    <script src="shopping.js"></script>
+    <script src="filter.js"></script>
+</body>
+</html>
